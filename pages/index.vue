@@ -1,12 +1,17 @@
 <template>
-  <div class="animate__animated animate__fadeIn">
+  <div class="" >
     <div>  
       <Nav />
 
-      <Inicio />
+      <Inicio/>
+      
+      <NotaUno/>
       <Videos />
-      <Contacto />
-      <About />
+
+      <NotaDos/>
+      <Artistas />
+  
+      <NotaTres />
       <Footer />
     </div>
   </div>
@@ -15,19 +20,23 @@
 <script>
 import Inicio from "~/components/Inicio.vue";
 import Videos from "~/components/Videos.vue";
-import About from "~/components/About.vue";
-import Contacto from "~/components/Contacto.vue";
+import NotaTres from "~/components/NotaTres.vue";
+import NotaDos from "~/components/NotaDos.vue";
+
+import Artistas from "~/components/Artistas.vue";
 import Footer from "~/components/Footer.vue";
 import Nav from "~/components/Nav.vue";
+import NotaUno from "~/components/NotaUno.vue";
+
 
 
 export default {
   components: {
     Inicio,
     Videos,
-    About,
-    Contacto,
-    Footer, Nav
+    NotaTres,
+    Artistas,
+    Footer, Nav, NotaUno, NotaDos
   },
 };
 </script>

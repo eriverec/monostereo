@@ -41,11 +41,22 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    {
+      src: "@/plugins/aos", ssr: false
+    },
+    {
+      src:"@/plugins/rellax",
+    }
+  ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['bootstrap-vue/nuxt'],
+  modules: [
+    ['bootstrap-vue/nuxt', {
+      icons: true,
+    }],
+  ],
   /*
    ** Build configuration
    */
